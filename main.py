@@ -6,21 +6,21 @@ from org.apache.lucene.analysis.tokenattributes import CharTermAttribute
 lucene.initVM(vmargs=['-Djava.awt.headless=true'])
 
 # tokenizer
+tokenized = []
 file = open('query.ohsu.1-63', 'r')
 lines = file.readlines()
 for line in lines:
     if line.startswith("<title>"):
-        print(line.strip())
-
-test = (file.read())
-tokenizer = StandardTokenizer()
-tokenizer.setReader(StringReader(test))
-charTermAttrib = tokenizer.getAttribute(CharTermAttribute.class_)
-tokenizer.reset()
-tokens = []
-while tokenizer.incrementToken():
-    tokens.append(charTermAttrib.toString())
-print(tokens)
+        test = line[8:].strip()
+        tokenizer = StandardTokenizer()
+        tokenizer.setReader(StringReader(test))
+        charTermAttrib = tokenizer.getAttribute(CharTermAttribute.class_)
+        tokenizer.reset()
+        tokens = []
+        while tokenizer.incrementToken():
+            tokens.append(charTermAttrib.toString())
+        tokenized.append(tokens)
+print(tokenized)
 
 
 
