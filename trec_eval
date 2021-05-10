@@ -1,4 +1,4 @@
-# Below are the metrics of running ./trec_eval-9.0.7/trec_eval qrels.proper.ohsu.88-91 log.txt
+# Below are the metrics of running ./trec_eval-9.0.7/trec_eval qrels.ohsu.88-91 log.txt
 
 runid                 	all	Alex's
 num_q                 	all	63
