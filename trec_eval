@@ -1,0 +1,32 @@
+# Below are the metrics of running ./trec_eval-9.0.7/trec_eval qrels.proper.ohsu.88-91 log.txt
+
+runid                 	all	Alex's
+num_q                 	all	63
+num_ret               	all	3150
+num_rel               	all	1556
+num_rel_ret           	all	488
+map                   	all	0.1612
+gm_map                	all	0.0543
+Rprec                 	all	0.2239
+bpref                 	all	0.2972
+recip_rank            	all	0.5383
+iprec_at_recall_0.00  	all	0.5757
+iprec_at_recall_0.10  	all	0.4435
+iprec_at_recall_0.20  	all	0.3324
+iprec_at_recall_0.30  	all	0.2270
+iprec_at_recall_0.40  	all	0.1532
+iprec_at_recall_0.50  	all	0.1087
+iprec_at_recall_0.60  	all	0.0700
+iprec_at_recall_0.70  	all	0.0397
+iprec_at_recall_0.80  	all	0.0293
+iprec_at_recall_0.90  	all	0.0242
+iprec_at_recall_1.00  	all	0.0138
+P_5                   	all	0.3111
+P_10                  	all	0.2857
+P_15                  	all	0.2582
+P_20                  	all	0.2302
+P_30                  	all	0.1974
+P_100                 	all	0.0775
+P_200                 	all	0.0387
+P_500                 	all	0.0155
+P_1000                	all	0.0077
